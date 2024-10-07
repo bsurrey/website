@@ -9,7 +9,7 @@ function SubmitButton() {
 
   return (
     <button
-      className="ml-auto inline-block max-w-xs rounded-md bg-neutral-200 px-8 py-4 transition-colors hover:bg-neutral-700 disabled:opacity-50 dark:bg-neutral-800"
+      className="ml-auto inline-block max-w-xs rounded-md bg-neutral-200 px-8 py-4 transition-colors hover:bg-neutral-700 hover:text-white disabled:opacity-50 dark:bg-neutral-800"
       disabled={pending}
       type="submit"
     >

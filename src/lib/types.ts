@@ -1,24 +1,29 @@
+import { StaticImageData } from 'next/dist/shared/lib/get-img-props'
+
 export interface Skill {
-  name: string
-  weight?: number
   category?: 'programming' | 'framework' | 'technology' | 'method' | 'software' | 'soft' | 'hard'
   hidden?: boolean
+  name: string
+  weight?: number
 }
 
 export interface Project {
-  name: string
-  href: string
   description?: string
+  githubUrl?: string
+  image?: StaticImageData
+  name: string
   tags?: string[]
+  url?: string
+  wip?: boolean
 }
 
 export interface WorkExperience {
+  description?: string
+  logo: string
   name: string
+  projects?: Project[] | null
   role: string
   time: string
-  logo: string
-  projects?: Project[] | null
-  description?: string
 }
 
 export interface navigationItem {

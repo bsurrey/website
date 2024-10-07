@@ -13,7 +13,7 @@ export default function LinkButton({
 }) {
   return (
     <Link
-      className="flex w-full justify-center rounded-xl bg-black p-4 text-center text-white hover:bg-black/80 md:w-36 dark:hover:bg-neutral-800"
+      className="flex w-full justify-center rounded-xl bg-black p-4 text-center text-white hover:bg-black/80 md:w-fit dark:hover:bg-neutral-800"
       href={url}
       target={target}
     >

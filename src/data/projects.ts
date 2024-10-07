@@ -1,16 +1,6 @@
 import RoxanaHigginsCom from '../assets/projects/roxanahigginscom.png'
-import { StaticImageData } from 'next/dist/shared/lib/get-img-props'
+import { Project } from '@/lib/types'
 
-type Project = {
-  name: string
-  description: string
-  tags?: string[]
-  image?: StaticImageData
-  url?: string
-  githubUrl?: string
-  urlTitle?: string
-  wip: boolean
-}
 export const projects: Project[] = [
   {
     name: 'Portfolio: Roxana Higgins',
